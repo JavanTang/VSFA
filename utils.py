@@ -2,7 +2,7 @@
 @Author: TangZhiFeng
 @Data: Do not edit
 @LastEditors: TangZhiFeng
-@LastEditTime: 2020-03-24 10:43:11
+@LastEditTime: 2020-03-24 10:54:15
 @Description: 工具类
 '''
 
@@ -63,10 +63,10 @@ def obtain_frame(video_path):
             if not success:
                 print('video is all read')
                 break
-        except Exception as e:
-            print('video_path:' ,video_path)
-            print('读取视频出错!')
-            images = None
+    except Exception as e:
+        print('video_path:' ,video_path)
+        print('读取视频出错!')
+        images = None
     return images
 
 def download_mp4(urls, dir_path='./videos'):
