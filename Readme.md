@@ -1,3 +1,4 @@
+
 # Quality Assessment of In-the-Wild Videos
 [![License](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](License)
 
@@ -53,6 +54,13 @@ The model weights provided in `models/VSFA.pt` are the saved weights when runnin
 ```
 python test_demo.py --video_path=test.mp4
 ```
+
+Creating X.csv file
+```
+url_pre,video_key
+url_pre,url_suffix
+```
+`python test.py`
 
 ### Requirement
 ```bash
